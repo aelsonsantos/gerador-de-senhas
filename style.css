@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Orbitron&family=Pacifico&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+:root{
+    --cor-fundo:#111;
+    --cor-preto:#000;
+    --cor-caracteres:#fff;
+    --cor1:#a4e6f1;
+    --cor2:#579cc5;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color:var(--cor1) ;
+    color: var(--cor2);
+    height: 100vh;
+    width:100vw;
+}
+.header_container{
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+.header_container h1{
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+}
+#pass_container{
+    display: flex;
+    justify-content: space-between;
+    background: var(--cor-fundo);
+    color: var(--cor-caracteres);
+    height: 3rem;
+    width: 28rem;
+    border-radius: 1rem;
+    align-items: center;
+    padding: 0 1rem 0 1rem;
+    margin:1.2rem;
+}
+#password{
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#pass_lenght{
+    display: flex;
+    flex-direction: column;
+    margin: 1.2rem;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    margin: 1.2rem;
+}
+.menu_itens{
+    display: flex;
+    justify-content: center;
+    gap:1rem;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin: 1.2rem;
+}
+#copy{
+    height: 1.3rem;
+    width: 1.3rem;
+    background-color: var(--cor2);
+    color: var(--cor1);
+    border: none;
+}
+#pass_button{
+    font-size: 1rem;
+    height: 3rem;
+    width: 15rem;
+    border-radius: 1rem;
+    border: 0.3rem solid var(--cor2);
+    background-color: var(--cor2);
+    color: var(--cor1);
+    cursor: pointer;
+}
+
+#pass_button:hover{
+   box-shadow: 0 0 0.4rem var(--cor2);
+}

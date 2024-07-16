@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de senhas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src= "script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body>
+    <header class="header_container">
+        <h1>Gerador de senhas</h1>
+        <p>Gere uma senha segura para ser utilizada na internet</p>
+    </header>
+    <main class="menu">
+        <div id="pass_container">
+            <span id="password"></span>
+            <button id="copy">
+                <i class="fa-regular fa-copy"></i>
+            </button>
+        </div>
+
+        <div id="pass_lenght">
+           <span> Defina a quantidade de caracteres: <span id="chart_lngt"></span> caracteres</span>
+            <input id="slider" type="range" max="50" min="5" value="15">
+        </div>
+
+        <div class="title">
+            <span>Escolha os tipos de  caracteres que deseja incluir:</span>
+        </div>
+
+       <div class="menu_itens">
+            <div class="itens">
+                <input type="checkbox" name="option_up"  id="option_up">
+                <label for="option_up">ABC</label>
+            </div>
+            <div class="itens">
+                <input type="checkbox" name="option_low"  id="option_low">
+                <label for="option_low">abc</label>
+            </div>
+            <div class="itens">
+                <input type="checkbox" name="option_number"  id="option_number">
+                <label for="option_number">123</label>
+            </div>
+            <div class="itens">
+                <input type="checkbox" name="option_special"  id="option_special">
+                <label for="option_special">@#$</label>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button id="pass_button"> GERAR SENHA</button>
+        </div>
+    </main>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+</html>
